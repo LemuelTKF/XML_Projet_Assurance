@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
 
-<ASSURANCES>
-    <ASSURANCE IdAss="1">
-        <TYPE></TYPE>
-        <GENRE></GENRE>
-        <OPTIONS>
-            <OPTION></OPTION>
-        </OPTIONS>
-        <RISQUES>
-            <RISQUE></RISQUE>
-        </RISQUES>
-    </ASSURANCE>
+<Assurances
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="assurance.xsd">
+    <Assurance IdAss="1">
+        <Type></Type>
+        <Genre></Genre>
+        <Options>
+            <Option></Option>
+        </Options>
+        <Risques>
+            <Risque></Risque>
+        </Risques>
+    </Assurance>
 
-    <CLIENT IdClient="1">
-        <NOM></NOM>
-        <PRENOM></PRENOM>
-        <DATENAISS></DATENAISS>
-        <CONSEILLERREF/>
-    </CLIENT>
+    <Client IdClient="1">
+        <Nom></Nom>
+        <Prenom></Prenom>
+        <DateNaiss></DateNaiss>
+        <ConseillerRef/>
+    </Client>
 
-    <CONSEILLER IdCons="1">
-        <NOM></NOM>
-        <PRENOM></PRENOM>
-        <ANNEENAISS></ANNEENAISS>
-    </CONSEILLER>
+    <Conseiller IdCons="1">
+        <Nom></Nom>
+        <Prenom></Prenom>
+        <DateNaiss></DateNaiss>
+    </Conseiller>
 
-    <CONTRAT>
-        <CLIENTREF/>
-        <ASSURANCEREF/>
-        <DATE></DATE>
-        <OPTION num="1"></OPTION>
-    </CONTRAT>
-</ASSURANCES>
+    <Contrat>
+        <ClientRef/>
+        <AssuranceRef/>
+        <Date></Date>
+        <Option num="1"></Option>
+    </Contrat>
+</Assurances>
