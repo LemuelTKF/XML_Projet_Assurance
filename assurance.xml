@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<ASSURANCES>
+    <ASSURANCE IdAss="1">
+        <TYPE></TYPE>
+        <GENRE></GENRE>
+        <OPTIONS>
+            <OPTION></OPTION>
+        </OPTIONS>
+        <RISQUES>
+            <RISQUE></RISQUE>
+        </RISQUES>
+    </ASSURANCE>
+
+    <CLIENT IdClient="1">
+        <NOM></NOM>
+        <PRENOM></PRENOM>
+        <DATENAISS></DATENAISS>
+        <CONSEILLERREF/>
+    </CLIENT>
+
+    <CONSEILLER IdCons="1">
+        <NOM></NOM>
+        <PRENOM></PRENOM>
+        <ANNEENAISS></ANNEENAISS>
+    </CONSEILLER>
+
+    <CONTRAT>
+        <CLIENTREF/>
+        <ASSURANCEREF/>
+        <DATE></DATE>
+        <OPTION num="1"></OPTION>
+    </CONTRAT>
+</ASSURANCES>
