@@ -4,33 +4,36 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="assurance.xsd">
     <Assurance IdAss="1">
-        <Type></Type>
-        <Genre></Genre>
+        <Type>Type</Type>
+        <Genre>Genre</Genre>
         <Options>
-            <Option></Option>
+            <Option>Option</Option>
         </Options>
         <Risques>
-            <Risque></Risque>
+            <Risque>Risque</Risque>
         </Risques>
     </Assurance>
 
     <Client IdClient="1">
-        <Nom></Nom>
-        <Prenom></Prenom>
-        <DateNaiss></DateNaiss>
-        <ConseillerRef/>
+        <Nom>Nom</Nom>
+        <Prenom>Prenom</Prenom>
+        <DateNaiss>15/09/1999</DateNaiss>
+        <Email>client@gmail.com</Email>
+        <ConseillerRef id="1"/>
     </Client>
 
     <Conseiller IdCons="1">
-        <Nom></Nom>
-        <Prenom></Prenom>
-        <DateNaiss></DateNaiss>
+        <Nom>Nom</Nom>
+        <Prenom>Prenom</Prenom>
+        <DateNaiss>07/07/1997</DateNaiss>
+        <Email>conseiller@gmail.com</Email>
     </Conseiller>
 
     <Contrat>
-        <ClientRef/>
-        <AssuranceRef/>
-        <Date></Date>
-        <Option num="1"></Option>
+        <ClientRef id="1"/>
+        <AssuranceRef id="1"/>
+        <DateSigned>10/04/2020</DateSigned>
+        <DateBegin>01/05/2020</DateBegin>
+        <ExpireDate>31/04/2022</ExpireDate>
     </Contrat>
 </Assurances>

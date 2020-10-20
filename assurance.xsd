@@ -1,0 +1,87 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Assurances" type="AssurancesType"/>
+    <xs:element name="Assurance" type="AssuranceType"/>
+    <xs:element name="Client" type="ClientType"/>
+    <xs:element name="Conseiller" type="ConseillerType"/>
+    <xs:element name="Contrat" type="ContratType"/>
+    <xs:element name="Options" type="OptionsType"/>
+    <xs:element name="Risques" type="RisquesType"/>
+
+    <xs:complexType name="IDType">
+        <xs:attribute name="id" type="xs:positiveInteger"/>
+    </xs:complexType>
+
+    <xs:simpleType name="DateType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{2}/\d{2}/\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="EmailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^\.]+\..+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="AssurancesType">
+        <xs:sequence>
+            <xs:element ref="Assurance"/>
+            <xs:element ref="Client"/>
+            <xs:element ref="Conseiller"/>
+            <xs:element ref="Contrat"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="AssuranceType">
+        <xs:attribute name="IdAss" type="xs:positiveInteger"/>
+        <xs:sequence>
+            <xs:element name="Type" type="xs:string"/>
+            <xs:element name="Genre" type="xs:string"/>
+            <xs:element ref="Options" maxOccurs="1"/>
+            <xs:element ref="Risques" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ClientType">
+        <xs:attribute name="IdClient" type="xs:positiveInteger"/>
+        <xs:sequence>
+            <xs:element name="Nom" type="xs:string"/>
+            <xs:element name="Prenom" type="xs:string"/>
+            <xs:element name="DateNaiss" type="DateType"/>
+            <xs:element name="Email" type="EmailType"/>
+            <xs:element name="ConseillerRef" type="IDType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ConseillerType">
+        <xs:attribute name="IdCons" type="xs:positiveInteger"/>
+        <xs:sequence>
+            <xs:element name="Nom" type="xs:string"/>
+            <xs:element name="Prenom" type="xs:string"/>
+            <xs:element name="DateNaiss" type="DateType"/>
+            <xs:element name="Email" type="EmailType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ContratType">
+        <xs:sequence>
+            <xs:element name="ClientRef" type="IDType"/>
+            <xs:element name="AssuranceRef" type="IDType"/>
+            <xs:element name="DateSigned" type="DateType"/>
+            <xs:element name="DateBegin" type="DateType"/>
+            <xs:element name="ExpireDate" type="DateType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="OptionsType">
+        <xs:sequence>
+            <xs:element name="Option" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="RisquesType">
+        <xs:sequence>
+            <xs:element name="Risque" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
