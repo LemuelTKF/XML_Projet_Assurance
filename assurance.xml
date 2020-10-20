@@ -1,39 +1,224 @@
-<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <Assurances
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="assurance.xsd">
+        >
     <Assurance IdAss="1">
-        <Type>Type</Type>
-        <Genre>Genre</Genre>
+        <Type>Assurance des personnes</Type>
+        <Genre> Assurances individuelles</Genre>
         <Options>
-            <Option>Option</Option>
+            <Option>
+                Assurance décès invalidité
+                <Risques>
+                    <risque >
+                        Décès de l'emprunteur
+                    </risque>
+                    <risque >
+                        Perte totale et irréversible d?autonomie
+                    </risque>
+                    <risque >
+                        Incapacité temporaire de travail
+                    </risque>
+                </Risques>
+            </Option>
+            <Option>
+                Assurance complémentaire santé
+                <Risques>
+                    <risque >
+                        accident
+                    </risque>
+                    <risque >
+                        maternité
+                    </risque>
+                    <risque >
+                        frais de santé
+                    </risque>
+
+                </Risques>
+            </Option>
+            <Option>
+                Assurance retraite
+            </Option>
         </Options>
-        <Risques>
-            <Risque>Risque</Risque>
-        </Risques>
+    </Assurance>
+    <Assurance idAss="2">
+        <Type>Assurance des personnes</Type>
+        <Genre> Assurances collectives</Genre>
+        <Options>
+            <Option>
+            Assurance prévoyance collective
+                <Risques>
+                    <risque >
+                    Décès
+                    </risque>
+                    <risque>
+                    Invalidité
+                    </risque>
+                    <risque >
+                    incapacité de travail
+                    </risque>
+                </Risques>
+        </Option>
+            <Option>
+                Assurance retraite collective
+                <Risques>
+                    <risque >
+                        Dommages corporels
+                    </risque>
+                    <risque >
+                        Engagements liés à la durée de la vie
+                    </risque>
+                </Risques>
+            </Option>
+        </Options>
+
+    </Assurance>
+
+    <Assurance IdAss="3">
+        <Type>Assurances de biens professionnels</Type>
+
+        <Options>
+            <Option>
+                l’assurance multirisques
+                <Risques>
+                    <Risque>
+
+                    </Risque>
+                </Risques>
+            </Option>
+            <Option>
+                Assurance automobile
+                <Risques>
+                    <Risque>
+
+                    </Risque>
+                </Risques>
+            </Option>
+            <Option>
+                Assurance motocycle
+                <Risques>
+                    <Risque>
+
+                    </Risque>
+                </Risques>
+            </Option>
+            <Option>
+                Assurance locaux professionnels
+                <Risques>
+                    <Risque>
+
+                    </Risque>
+                </Risques>
+            </Option>
+            <Option>
+                Assurance risques informatiques
+                <Risques>
+                    <Risque>
+
+                    </Risque>
+                </Risques>
+            </Option>
+            <Option>
+                Assurance marchandises transportées
+                <Risques>
+                    <Risque>
+
+                    </Risque>
+                </Risques>
+            </Option>
+
+            <Option>
+                Assurance bris de machine
+                <Risques>
+                    <Risque>
+
+                    </Risque>
+                </Risques>
+            </Option>
+        </Options>
+
+    </Assurance>
+    <Assurance IdAss="3">
+        <Type>Assurances d’activité</Type>
+        <Options>
+            <Option>
+                l'assurance responsabilité civile
+                <Risques>
+                    <Risque>
+
+                    </Risque>
+                </Risques>
+            </Option>
+            <Option>
+                la garantie décennale
+                <Risques>
+                    <Risque>
+
+                    </Risque>
+                </Risques>
+            </Option>
+            <Option>
+                Assurance perte d’exploitation
+                <Risques>
+                    <Risque>
+
+                    </Risque>
+                </Risques>
+            </Option>
+            <Option>
+                Assurance protection juridique
+                <Risques>
+                    <Risque>
+
+                    </Risque>
+                </Risques>
+            </Option>
+            <Option>
+                Assurance moyens de paiements
+                <Risques>
+                    <Risque>
+
+                    </Risque>
+                </Risques>
+            </Option>
+            
+        </Options>
+
     </Assurance>
 
     <Client IdClient="1">
-        <Nom>Nom</Nom>
-        <Prenom>Prenom</Prenom>
-        <DateNaiss>15/09/1999</DateNaiss>
-        <Email>client@gmail.com</Email>
-        <ConseillerRef id="1"/>
+        <Nom>HONYIGLOH</Nom>
+        <Prenom>Jean Armand</Prenom>
+        <DateNaiss>2000-10-22</DateNaiss>
+        <statut>Particulier</statut>
+        <ConseillerRef/>
+    </Client>
+    <Client IdClient="2">
+        <Nom>DONTO </Nom>
+        <Prenom>Komlan Lemuel</Prenom>
+        <DateNaiss>2000-07-15</DateNaiss>
+        <statut>Entreprise</statut>
+        <ConseillerRef/>
+    </Client>
+    <Client IdClient="1" idConseillerRef="1">
+        <Nom>ASSIGBLEY</Nom>
+        <Prenom>Jonathan</Prenom>
+        <DateNaiss>2000-10-04</DateNaiss>
+        <statut>Particulier</statut>
+
     </Client>
 
-    <Conseiller IdCons="1">
-        <Nom>Nom</Nom>
-        <Prenom>Prenom</Prenom>
-        <DateNaiss>07/07/1997</DateNaiss>
-        <Email>conseiller@gmail.com</Email>
+    <Conseiller IdCons="1" idConseillerRef="1">
+        <Nom>DEBRUYNE</Nom>
+        <Prenom>Marc</Prenom>
+        <DateNaiss>1984-04-18</DateNaiss>
     </Conseiller>
 
     <Contrat>
-        <ClientRef id="1"/>
-        <AssuranceRef id="1"/>
-        <DateSigned>10/04/2020</DateSigned>
-        <DateBegin>01/05/2020</DateBegin>
-        <ExpireDate>31/04/2022</ExpireDate>
+        <ClientRef idClientRef="1"/>
+        <AssuranceRef idAssuranceRef="1"/>
+        <conseillerRef idConseillerRef="1"/>
+        <Date>2020-10-21</Date>
+        <Option num="1"></Option>
     </Contrat>
 </Assurances>
