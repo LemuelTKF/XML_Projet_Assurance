@@ -10,29 +10,29 @@
             <Option>
                 Assurance décès invalidité
                 <Risques>
-                    <risque >
+                    <Risque >
                         Décès de l'emprunteur
-                    </risque>
-                    <risque >
+                    </Risque>
+                    <Risque >
                         Perte totale et irréversible d?autonomie
-                    </risque>
-                    <risque >
+                    </Risque>
+                    <Risque >
                         Incapacité temporaire de travail
-                    </risque>
+                    </Risque>
                 </Risques>
             </Option>
             <Option>
                 Assurance complémentaire santé
                 <Risques>
-                    <risque >
+                    <Risque >
                         accident
-                    </risque>
-                    <risque >
+                    </Risque>
+                    <Risque >
                         maternité
-                    </risque>
-                    <risque >
+                    </Risque>
+                    <Risque >
                         frais de santé
-                    </risque>
+                    </Risque>
 
                 </Risques>
             </Option>
@@ -40,6 +40,7 @@
                 Assurance retraite
             </Option>
         </Options>
+        <Description>Ajoute la description là</Description>
     </Assurance>
     <Assurance idAss="2">
         <Type>Assurance des personnes</Type>
@@ -48,26 +49,26 @@
             <Option>
             Assurance prévoyance collective
                 <Risques>
-                    <risque >
+                    <Risque >
                     Décès
-                    </risque>
-                    <risque>
+                    </Risque>
+                    <Risque>
                     Invalidité
-                    </risque>
-                    <risque >
+                    </Risque>
+                    <Risque >
                     incapacité de travail
-                    </risque>
+                    </Risque>
                 </Risques>
         </Option>
             <Option>
                 Assurance retraite collective
                 <Risques>
-                    <risque >
+                    <Risque >
                         Dommages corporels
-                    </risque>
-                    <risque >
+                    </Risque>
+                    <Risque >
                         Engagements liés à la durée de la vie
-                    </risque>
+                    </Risque>
                 </Risques>
             </Option>
         </Options>
@@ -181,7 +182,7 @@
                     </Risque>
                 </Risques>
             </Option>
-            
+
         </Options>
 
     </Assurance>
