@@ -5,10 +5,17 @@
         >
     <Assurance IdAss="1">
         <Type>Assurance des personnes</Type>
+        <Description>
+            Les assurances de personnes couvrent les personnes physiques contre les risques de décès ou d’invalidité.
+            On distingue les assurances individuelles et les assurances collectives.
+        </Description>
         <Genre> Assurances individuelles</Genre>
         <Options>
             <Option>
-                Assurance décès invalidité
+                <Intitule>Assurance décès invalidité</Intitule>
+                <Description>
+
+                </Description>
                 <Risques>
                     <Risque >
                         Décès de l'emprunteur
@@ -22,7 +29,7 @@
                 </Risques>
             </Option>
             <Option>
-                Assurance complémentaire santé
+                <Intitule> Assurance complémentaire santé </Intitule>
                 <Risques>
                     <Risque >
                         accident
@@ -37,17 +44,21 @@
                 </Risques>
             </Option>
             <Option>
-                Assurance retraite
+                <Intitule>  Assurance retraite </Intitule>
             </Option>
         </Options>
         <Description>Ajoute la description là</Description>
     </Assurance>
     <Assurance idAss="2">
         <Type>Assurance des personnes</Type>
+        <Description>
+            Les assurances de personnes couvrent les personnes physiques contre les risques de décès ou d’invalidité.
+            On distingue les assurances individuelles et les assurances collectives.
+        </Description>
         <Genre> Assurances collectives</Genre>
         <Options>
             <Option>
-            Assurance prévoyance collective
+                <Intitule> Assurance prévoyance collective </Intitule>
                 <Risques>
                     <Risque >
                     Décès
@@ -61,7 +72,7 @@
                 </Risques>
         </Option>
             <Option>
-                Assurance retraite collective
+                <Intitule>  Assurance retraite collective </Intitule>
                 <Risques>
                     <Risque >
                         Dommages corporels
@@ -77,10 +88,15 @@
 
     <Assurance IdAss="3">
         <Type>Assurances de biens professionnels</Type>
+        <Description>
+        ``Ce type d’assurances protège les équipements (véhicules, meubles, locaux…) de l’entreprise
+            contre les risques de dommages involontaires
+            (accidents, incendies, vandalisme…).
+        </Description>
 
         <Options>
             <Option>
-                l’assurance multirisques
+                <Intitule>  l’assurance multirisques </Intitule>
                 <Risques>
                     <Risque>
 
@@ -88,7 +104,7 @@
                 </Risques>
             </Option>
             <Option>
-                Assurance automobile
+                <Intitule>  Assurance automobile </Intitule>
                 <Risques>
                     <Risque>
 
@@ -96,7 +112,7 @@
                 </Risques>
             </Option>
             <Option>
-                Assurance motocycle
+                <Intitule>  Assurance motocycle</Intitule>
                 <Risques>
                     <Risque>
 
@@ -120,7 +136,7 @@
                 </Risques>
             </Option>
             <Option>
-                Assurance marchandises transportées
+                <Intitule> Assurance marchandises transportées</Intitule>
                 <Risques>
                     <Risque>
 
@@ -129,7 +145,7 @@
             </Option>
 
             <Option>
-                Assurance bris de machine
+                <Intitule> Assurance bris de machine </Intitule>
                 <Risques>
                     <Risque>
 
@@ -141,9 +157,12 @@
     </Assurance>
     <Assurance IdAss="3">
         <Type>Assurances d’activité</Type>
+        <Description>
+            Ce type d’assurance couvre les dommages susceptibles d’être causés par l’activité de l’entreprise.
+        </Description>
         <Options>
             <Option>
-                l'assurance responsabilité civile
+               <Intitule>l'assurance responsabilité civile</Intitule>
                 <Risques>
                     <Risque>
 
@@ -151,7 +170,8 @@
                 </Risques>
             </Option>
             <Option>
-                la garantie décennale
+                <Intitule> la garantie décennale</Intitule>
+
                 <Risques>
                     <Risque>
 
@@ -159,7 +179,7 @@
                 </Risques>
             </Option>
             <Option>
-                Assurance perte d’exploitation
+                <Intitule> Assurance perte d’exploitation</Intitule>
                 <Risques>
                     <Risque>
 
@@ -167,7 +187,7 @@
                 </Risques>
             </Option>
             <Option>
-                Assurance protection juridique
+                <Intitule> Assurance protection juridique</Intitule>
                 <Risques>
                     <Risque>
 
@@ -175,7 +195,7 @@
                 </Risques>
             </Option>
             <Option>
-                Assurance moyens de paiements
+                <Intitule>Assurance moyens de paiements</Intitule>
                 <Risques>
                     <Risque>
 
@@ -205,7 +225,7 @@
         <Nom>ASSIGBLEY</Nom>
         <Prenom>Jonathan</Prenom>
         <DateNaiss>2000-10-04</DateNaiss>
-        <statut>Particulier</statut>
+        <Statut>Particulier</Statut>
 
     </Client>
 
