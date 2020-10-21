@@ -2,7 +2,7 @@
 
 <Assurances
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        >
+        xsi:noNamespaceSchemaLocation="assurance.xsd">
     <Assurance IdAss="1">
         <Type>Assurance des personnes</Type>
         <Description>
@@ -11,45 +11,40 @@
         </Description>
         <Genre> Assurances individuelles</Genre>
         <Options>
-            <Option>
-                <Intitule>Assurance décès invalidité</Intitule>
-                <Description>
-
-                </Description>
+            <Option num="1">
+                <Intitule>Assurance Décès Invalidité</Intitule>
+                <Description></Description>
                 <Risques>
-                    <Risque >
+                    <Risque>
                         Décès de l'emprunteur
                     </Risque>
-                    <Risque >
+                    <Risque>
                         Perte totale et irréversible d?autonomie
                     </Risque>
-                    <Risque >
+                    <Risque>
                         Incapacité temporaire de travail
                     </Risque>
                 </Risques>
             </Option>
-            <Option>
-                <Intitule> Assurance complémentaire santé </Intitule>
+            <Option num="2">
+                <Intitule>Assurance complémentaire santé</Intitule>
+                <Description></Description>
                 <Risques>
-                    <Risque >
-                        accident
-                    </Risque>
-                    <Risque >
-                        maternité
-                    </Risque>
-                    <Risque >
-                        frais de santé
-                    </Risque>
-
+                    <Risque>Accident</Risque>
+                    <Risque>Maternité</Risque>
+                    <Risque>Frais de santé</Risque>
                 </Risques>
             </Option>
-            <Option>
+            <Option num="3">
                 <Intitule>  Assurance retraite </Intitule>
+                <Description></Description>
+                <Risques>
+                    <Risque></Risque>
+                </Risques>
             </Option>
         </Options>
-        <Description>Ajoute la description là</Description>
     </Assurance>
-    <Assurance idAss="2">
+    <Assurance IdAss="2">
         <Type>Assurance des personnes</Type>
         <Description>
             Les assurances de personnes couvrent les personnes physiques contre les risques de décès ou d’invalidité.
@@ -57,8 +52,9 @@
         </Description>
         <Genre> Assurances collectives</Genre>
         <Options>
-            <Option>
+            <Option num="1">
                 <Intitule> Assurance prévoyance collective </Intitule>
+                <Description></Description>
                 <Risques>
                     <Risque >
                     Décès
@@ -70,11 +66,12 @@
                     incapacité de travail
                     </Risque>
                 </Risques>
-        </Option>
-            <Option>
+            </Option>
+            <Option num="2">
                 <Intitule>  Assurance retraite collective </Intitule>
+                <Description></Description>
                 <Risques>
-                    <Risque >
+                    <Risque>
                         Dommages corporels
                     </Risque>
                     <Risque >
@@ -93,50 +90,55 @@
             contre les risques de dommages involontaires
             (accidents, incendies, vandalisme…).
         </Description>
-
         <Options>
-            <Option>
+            <Option num="1">
                 <Intitule>  l’assurance multirisques </Intitule>
+                <Description></Description>
                 <Risques>
                     <Risque>
 
                     </Risque>
                 </Risques>
             </Option>
-            <Option>
+            <Option num="2">
                 <Intitule>  Assurance automobile </Intitule>
+                <Description></Description>
                 <Risques>
                     <Risque>
 
                     </Risque>
                 </Risques>
             </Option>
-            <Option>
+            <Option num="3">
                 <Intitule>  Assurance motocycle</Intitule>
+                <Description></Description>
                 <Risques>
                     <Risque>
 
                     </Risque>
                 </Risques>
             </Option>
-            <Option>
-                Assurance locaux professionnels
+            <Option num="4">
+                <Intitule>Assurance locaux professionnels</Intitule>
+                <Description></Description>
                 <Risques>
                     <Risque>
 
                     </Risque>
                 </Risques>
             </Option>
-            <Option>
-                Assurance risques informatiques
+            <Option num="5">
+                <Intitule>Assurance risques informatiques</Intitule>
+                <Description></Description>
                 <Risques>
                     <Risque>
 
                     </Risque>
                 </Risques>
             </Option>
-            <Option>
+            <Option num="6">
                 <Intitule> Assurance marchandises transportées</Intitule>
+                <Description></Description>
                 <Risques>
                     <Risque>
 
@@ -144,8 +146,9 @@
                 </Risques>
             </Option>
 
-            <Option>
+            <Option num="7">
                 <Intitule> Assurance bris de machine </Intitule>
+                <Description></Description>
                 <Risques>
                     <Risque>
 
@@ -155,47 +158,51 @@
         </Options>
 
     </Assurance>
-    <Assurance IdAss="3">
+    <Assurance IdAss="4">
         <Type>Assurances d’activité</Type>
         <Description>
             Ce type d’assurance couvre les dommages susceptibles d’être causés par l’activité de l’entreprise.
         </Description>
         <Options>
-            <Option>
+            <Option num="1">
                <Intitule>l'assurance responsabilité civile</Intitule>
+                <Description></Description>
                 <Risques>
                     <Risque>
 
                     </Risque>
                 </Risques>
             </Option>
-            <Option>
+            <Option num="2">
                 <Intitule> la garantie décennale</Intitule>
-
+                <Description></Description>
                 <Risques>
                     <Risque>
 
                     </Risque>
                 </Risques>
             </Option>
-            <Option>
+            <Option num="3">
                 <Intitule> Assurance perte d’exploitation</Intitule>
+                <Description></Description>
                 <Risques>
                     <Risque>
 
                     </Risque>
                 </Risques>
             </Option>
-            <Option>
+            <Option num="4">
                 <Intitule> Assurance protection juridique</Intitule>
+                <Description></Description>
                 <Risques>
                     <Risque>
 
                     </Risque>
                 </Risques>
             </Option>
-            <Option>
+            <Option num="5">
                 <Intitule>Assurance moyens de paiements</Intitule>
+                <Description></Description>
                 <Risques>
                     <Risque>
 
@@ -210,36 +217,40 @@
     <Client IdClient="1">
         <Nom>HONYIGLOH</Nom>
         <Prenom>Jean Armand</Prenom>
-        <DateNaiss>2000-10-22</DateNaiss>
-        <statut>Particulier</statut>
-        <ConseillerRef/>
+        <DateNaiss>22/10/2000</DateNaiss>
+        <Email>honyiglohjeanarmand@gmail.com</Email>
+        <ConseillerRef id="1"/>
+        <Statut>Particulier</Statut>
     </Client>
     <Client IdClient="2">
         <Nom>DONTO </Nom>
         <Prenom>Komlan Lemuel</Prenom>
-        <DateNaiss>2000-07-15</DateNaiss>
-        <statut>Entreprise</statut>
-        <ConseillerRef/>
+        <DateNaiss>15/08/2000</DateNaiss>
+        <Email>lemueldontogates5@gmail.com</Email>
+        <ConseillerRef id="1"/>
+        <Statut>Entreprise</Statut>
     </Client>
-    <Client IdClient="1" idConseillerRef="1">
+    <Client IdClient="3">
         <Nom>ASSIGBLEY</Nom>
         <Prenom>Jonathan</Prenom>
-        <DateNaiss>2000-10-04</DateNaiss>
+        <DateNaiss>04/10/2000</DateNaiss>
+        <Email>assigleyjonathan@gmail.com</Email>
+        <ConseillerRef id="1"/>
         <Statut>Particulier</Statut>
-
     </Client>
 
-    <Conseiller IdCons="1" idConseillerRef="1">
+    <Conseiller IdCons="1">
         <Nom>DEBRUYNE</Nom>
         <Prenom>Marc</Prenom>
-        <DateNaiss>1984-04-18</DateNaiss>
+        <DateNaiss>18/04/1984</DateNaiss>
+        <Email>debruynemarc@gmail.com</Email>
     </Conseiller>
 
     <Contrat>
-        <ClientRef idClientRef="1"/>
-        <AssuranceRef idAssuranceRef="1"/>
-        <conseillerRef idConseillerRef="1"/>
-        <Date>2020-10-21</Date>
-        <Option num="1"></Option>
+        <ClientRef id="1"/>
+        <AssuranceRef id="1" option="1"/>
+        <DateSigned>21/10/2020</DateSigned>
+        <DateBegin>21/10/2020</DateBegin>
+        <ExpireDate>21/10/2020</ExpireDate>
     </Contrat>
 </Assurances>
