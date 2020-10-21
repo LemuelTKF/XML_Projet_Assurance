@@ -91,6 +91,7 @@
             <xs:element name="Nom" type="xs:string"/>
             <xs:element name="Prenom" type="xs:string"/>
             <xs:element name="DateNaiss" type="DateType"/>
+            <xs:element name="Adresse" type="xs:string"/>
             <xs:element name="Email" type="EmailType"/>
             <xs:element name="ConseillerRef" type="IDType"/>
             <xs:element name="Statut" type="xs:string"/>
@@ -126,6 +127,7 @@
     <xs:complexType name="OptionType">
         <xs:sequence>
             <xs:element name="Intitule" type="xs:string" minOccurs="1"/>
+            <xs:element name="Prix" type="xs:integer" minOccurs="1"/>
             <xs:element name="Description" type="xs:string" minOccurs="1"/>
             <xs:element ref="Risques"/>
         </xs:sequence>

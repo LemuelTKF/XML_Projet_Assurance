@@ -13,7 +13,11 @@
         <Options>
             <Option num="1">
                 <Intitule>Assurance Décès Invalidité</Intitule>
-                <Description></Description>
+                <Prix>60</Prix>
+                <Description>
+                    L’assurance décès invalidité (ADI) assure aux bénéficiaires du contrat (assuré, conjoint, enfants)
+                    le versement d’un capital (en cas de décès) ou d’indemnités (en cas d’invalidité de l’entrepreneur).
+                </Description>
                 <Risques>
                     <Risque>
                         Décès de l'emprunteur
@@ -28,7 +32,11 @@
             </Option>
             <Option num="2">
                 <Intitule>Assurance complémentaire santé</Intitule>
-                <Description></Description>
+                <Prix>50</Prix>
+                <Description>
+                    Les complémentaires santé, appelées également mutuelles, prennent en charge la part
+                    des frais médicaux non remboursée par le régime général.
+                </Description>
                 <Risques>
                     <Risque>Accident</Risque>
                     <Risque>Maternité</Risque>
@@ -37,7 +45,10 @@
             </Option>
             <Option num="3">
                 <Intitule>  Assurance retraite </Intitule>
-                <Description></Description>
+                <Prix>40</Prix>
+                <Description>
+                    L’assuré cotise à une caisse de retraite complémentaire, en plus du régime obligatoire.
+                </Description>
                 <Risques>
                     <Risque></Risque>
                 </Risques>
@@ -54,7 +65,11 @@
         <Options>
             <Option num="1">
                 <Intitule> Assurance prévoyance collective </Intitule>
-                <Description></Description>
+                <Prix>25</Prix>
+                <Description>
+                    Même principe que pour l’assurance « santé individuelle », à la différence près que le contrat est ici élargi aux
+                    salariés de l’entreprise.
+                </Description>
                 <Risques>
                     <Risque >
                     Décès
@@ -69,7 +84,11 @@
             </Option>
             <Option num="2">
                 <Intitule>  Assurance retraite collective </Intitule>
-                <Description></Description>
+                <Prix>30</Prix>
+                <Description>
+                    Les entreprises peuvent instaurer pour leurs salariés, en complément du régime obligatoire, un système de
+                    retraite complémentaire (AGIRC pour les cadres, ARRCO pour les employés).
+                </Description>
                 <Risques>
                     <Risque>
                         Dommages corporels
@@ -93,7 +112,12 @@
         <Options>
             <Option num="1">
                 <Intitule>  l’assurance multirisques </Intitule>
-                <Description></Description>
+                <Prix>36</Prix>
+                <Description>
+                    Ce type d’assurance protège les marchandises et les biens d’équipement et immobiliers contre toute
+                    les formes de sinistres (catastrophe naturelle, incendies, cambriolage, dégât des eaux, tempête,
+                    attentat terroriste, grêle, dommages électriques…).
+                </Description>
                 <Risques>
                     <Risque>
 
@@ -102,16 +126,24 @@
             </Option>
             <Option num="2">
                 <Intitule>  Assurance automobile </Intitule>
-                <Description></Description>
+                <Prix>24</Prix>
+                <Description>
+                    L’assurance automobile couvre la voiture de l’entreprise contre les risques de vandalisme, de vol,
+                    d’accident, d’explosion ou de bris de glace. Sont également pris en charge les accidents susceptibles d’être provoqués par votre véhicule.
+                </Description>
                 <Risques>
                     <Risque>
-
+                        Accident
                     </Risque>
                 </Risques>
             </Option>
             <Option num="3">
                 <Intitule>  Assurance motocycle</Intitule>
-                <Description></Description>
+                <Prix>50</Prix>
+                <Description>
+                    Comme pour l'assurance « automobile », l'assuré peut couvrir un deux roues contre les risques de sinistres
+                    (vol, accident, explosion...) et les dommages causés à autrui.
+                </Description>
                 <Risques>
                     <Risque>
 
@@ -120,16 +152,25 @@
             </Option>
             <Option num="4">
                 <Intitule>Assurance locaux professionnels</Intitule>
-                <Description></Description>
+                <Prix>38</Prix>
+                <Description>
+                    Face aux dommages que peuvent entraîner un incendie, un dégât des eaux, une explosion ou une catastrophe naturelle, les chefs d'entreprise peuvent protéger leurs biens immobiliers contre ces risques
+                    en souscrivant une assurance « locaux professionnels ».
+                </Description>
+
                 <Risques>
                     <Risque>
-
+                        Accident
                     </Risque>
                 </Risques>
             </Option>
             <Option num="5">
                 <Intitule>Assurance risques informatiques</Intitule>
-                <Description></Description>
+                <Prix>15</Prix>
+                <Description>
+                    En raison des dégâts matériels qui peuvent endommager les supports d’information et les fichiers informatiques, les entreprises peuvent
+                    se prémunir contre ces risques en souscrivant une assurance « risques informatiques ».
+                </Description>
                 <Risques>
                     <Risque>
 
@@ -138,7 +179,12 @@
             </Option>
             <Option num="6">
                 <Intitule> Assurance marchandises transportées</Intitule>
-                <Description></Description>
+                <Prix>10</Prix>
+                <Description>
+                    L’assurance marchandises transportées s’ajoute en complément de l’assurance automobile (ou flotte automobile).
+                    Elle permet de protéger les marchandises transportées par véhicule contre les risques de vandalisme,
+                    de perte ou de dégradation.
+                </Description>
                 <Risques>
                     <Risque>
 
@@ -148,10 +194,13 @@
 
             <Option num="7">
                 <Intitule> Assurance bris de machine </Intitule>
-                <Description></Description>
+                <Prix>40</Prix>
+                <Description>
+                    L’assurance bris de machine couvre le matériel et les équipements de l’entreprise contre les risques de dégradation.
+                </Description>
                 <Risques>
                     <Risque>
-
+                        Dégradation des machines et équipements
                     </Risque>
                 </Risques>
             </Option>
@@ -166,7 +215,11 @@
         <Options>
             <Option num="1">
                <Intitule>l'assurance responsabilité civile</Intitule>
-                <Description></Description>
+                <Prix>40</Prix>
+                <Description>
+                    L’assurance responsabilité civile couvre les préjudices causés à des tiers (salariés, clients) et découlant de l’activité professionnelle (un salarié ou une machine blessant une personne interne par exemple). L’entrepreneur étant responsable des dommages occasionnés
+                    à autrui, cette assurance est obligatoire.
+                </Description>
                 <Risques>
                     <Risque>
 
@@ -175,25 +228,39 @@
             </Option>
             <Option num="2">
                 <Intitule> la garantie décennale</Intitule>
-                <Description></Description>
+                <Prix>40</Prix>
+                <Description>
+                    Cette assurance protège le maître d’ouvrage contre les risques de vices qui peuvent affecter le sol et le bâtiment.
+                    Les risques de non-conformité à certaines normes obligatoires sont également garantis.
+                </Description>
                 <Risques>
                     <Risque>
-
+                        Vices affectant le sol et le bâtiment
+                    </Risque>
+                    <Risque>
+                         Non-conformité à certaines normes obligatoires
                     </Risque>
                 </Risques>
             </Option>
             <Option num="3">
                 <Intitule> Assurance perte d’exploitation</Intitule>
-                <Description></Description>
+                <Prix>40</Prix>
+                <Description>
+                    Vu qu’aucune société n’est à l’abri d’une baisse d’activité professionnelle due à un « événement extérieur », les chefs d’entreprise peuvent se prémunir de ce type de risque en souscrivant
+                    à une assurance « activité professionnelle »
+                </Description>
                 <Risques>
                     <Risque>
-
+                        Sinistres(catastrophes naturelles)
                     </Risque>
                 </Risques>
             </Option>
             <Option num="4">
                 <Intitule> Assurance protection juridique</Intitule>
-                <Description></Description>
+                <Prix>40</Prix>
+                <Description>
+                    L’assurance protection juridique protège l’assuré contre toute forme de litige.
+                </Description>
                 <Risques>
                     <Risque>
 
@@ -202,10 +269,17 @@
             </Option>
             <Option num="5">
                 <Intitule>Assurance moyens de paiements</Intitule>
-                <Description></Description>
+                <Prix>40</Prix>
+                <Description>
+                    En réponse aux incidents de paiements qui peuvent affecter les entreprises (vol ou l’utilisation frauduleuse de chèques ou de cartes de crédits par exemple), leurs dirigeants peuvent se prémunir contre ce type de
+                    risque en souscrivant à cette assurance.
+                </Description>
                 <Risques>
                     <Risque>
-
+                        Vol de carte
+                    </Risque>
+                    <Risque>
+                        Utilisation frauduleuse de chèques ou de cartes de crédits
                     </Risque>
                 </Risques>
             </Option>
@@ -218,6 +292,7 @@
         <Nom>HONYIGLOH</Nom>
         <Prenom>Jean Armand</Prenom>
         <DateNaiss>22/10/2000</DateNaiss>
+        <Adresse>2400 route des dolines</Adresse>
         <Email>honyiglohjeanarmand@gmail.com</Email>
         <ConseillerRef id="1"/>
         <Statut>Particulier</Statut>
@@ -226,6 +301,7 @@
         <Nom>DONTO </Nom>
         <Prenom>Komlan Lemuel</Prenom>
         <DateNaiss>15/08/2000</DateNaiss>
+        <Adresse>2400 route des dolines</Adresse>
         <Email>lemueldontogates5@gmail.com</Email>
         <ConseillerRef id="1"/>
         <Statut>Entreprise</Statut>
@@ -234,6 +310,7 @@
         <Nom>ASSIGBLEY</Nom>
         <Prenom>Jonathan</Prenom>
         <DateNaiss>04/10/2000</DateNaiss>
+        <Adresse>400 route des galles Montreal</Adresse>
         <Email>assigleyjonathan@gmail.com</Email>
         <ConseillerRef id="1"/>
         <Statut>Particulier</Statut>
