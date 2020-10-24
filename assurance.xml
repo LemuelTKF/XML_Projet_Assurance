@@ -283,6 +283,7 @@
         <ConseillerRef id="1"/>
         <Statut>Particulier</Statut>
     </Client>
+
     <Client IdClient="2">
         <Nom>DONTO </Nom>
         <Prenom>Komlan Lemuel</Prenom>
@@ -301,6 +302,46 @@
         <ConseillerRef id="1"/>
         <Statut>Particulier</Statut>
     </Client>
+    <Client IdClient="4">
+        <Nom>POLYTECH </Nom>
+        <Prenom>NICE SOPHIA</Prenom>
+        <DateNaiss>22/10/2000</DateNaiss>
+        <Adresse> 930 Route des Colles, 06410 Biot</Adresse>
+        <Email>polytechnicesophia@gmail.com</Email>
+        <ConseillerRef id="1"/>
+        <Statut>Entreprise</Statut>
+    </Client>
+    <Client IdClient="5">
+        <Nom>ADANLEHOUSSI </Nom>
+        <Prenom>Denis</Prenom>
+        <DateNaiss>09/10/1999</DateNaiss>
+        <Adresse>2400 route des dolines</Adresse>
+        <Email>denisadanlehoussi@gmail.com</Email>
+        <ConseillerRef id="1"/>
+        <Statut>Entreprise</Statut>
+    </Client>
+
+    <Client IdClient="6">
+    <Nom>NAYO </Nom>
+    <Prenom>Ghislain</Prenom>
+    <DateNaiss>19/10/2000</DateNaiss>
+    <Adresse>120 carrefour des lions, DAKAR, Sénégal</Adresse>
+    <Email>nayoghislain@gmail.com</Email>
+    <ConseillerRef id="1"/>
+    <Statut>Particulier</Statut>
+    </Client>
+
+    <Client IdClient="7">
+        <Nom>ADUAYOM </Nom>
+        <Prenom>Caleb</Prenom>
+        <DateNaiss>22/05/2000</DateNaiss>
+        <Adresse>Agbalepedo, Togo, Lomé</Adresse>
+        <Email>aduayomcaleb@gmail.com</Email>
+        <ConseillerRef id="2"/>
+        <Statut>Particulier</Statut>
+    </Client>
+
+
 
     <Conseiller IdCons="1">
         <Nom>DEBRUYNE</Nom>
@@ -308,12 +349,81 @@
         <DateNaiss>18/04/1984</DateNaiss>
         <Email>debruynemarc@gmail.com</Email>
     </Conseiller>
+    <Conseiller IdCons="2">
+        <Nom>LAMERE</Nom>
+        <Prenom>Stephanie</Prenom>
+        <DateNaiss>02/05/1987</DateNaiss>
+        <Email>debruynemarc@gmail.com</Email>
+    </Conseiller>
 
     <Contrat>
         <ClientRef id="1"/>
-        <AssuranceRef id="1" option="1"/>
+        <AssuranceRef id="4" option="4"/>
+        <DateSigned>24/10/2020</DateSigned>
+        <DateBegin>01/11/2020</DateBegin>
+        <ExpireDate>01/11/2022</ExpireDate>
+    </Contrat>
+    <Contrat>
+        <ClientRef id="5"/>
+        <AssuranceRef id="1" option="2"/>
+        <DateSigned>19/06/2019</DateSigned>
+        <DateBegin>19/06/2019</DateBegin>
+        <ExpireDate>19/06/2020</ExpireDate>
+    </Contrat>
+    <Contrat>
+        <ClientRef id="5"/>
+        <AssuranceRef id="3" option="8"/>
+        <DateSigned>24/10/2020</DateSigned>
+        <DateBegin>24/10/2020</DateBegin>
+        <ExpireDate>24/10/2023</ExpireDate>
+    </Contrat>
+    <Contrat>
+        <ClientRef id="6"/>
+        <AssuranceRef id="3" option="8"/>
+        <DateSigned>08/05/2018</DateSigned>
+        <DateBegin>15/05/2020</DateBegin>
+        <ExpireDate>14/05/2021</ExpireDate>
+    </Contrat>
+    <Contrat>
+        <ClientRef id="6"/>
+        <AssuranceRef id="1" option="3"/>
+        <DateSigned>08/05/2018</DateSigned>
+        <DateBegin>15/05/2020</DateBegin>
+        <ExpireDate>14/05/2021</ExpireDate>
+    </Contrat>
+    <Contrat>
+        <ClientRef id="6"/>
+        <AssuranceRef id="1" option="2"/>
         <DateSigned>21/10/2020</DateSigned>
         <DateBegin>21/10/2020</DateBegin>
         <ExpireDate>21/10/2020</ExpireDate>
+    </Contrat>
+    <Contrat>
+        <ClientRef id="2"/>
+        <AssuranceRef id="4" option="16"/>
+        <DateSigned>01/08/2020</DateSigned>
+        <DateBegin>01/08/2020</DateBegin>
+        <ExpireDate>31/10/2020</ExpireDate>
+    </Contrat>
+    <Contrat>
+        <ClientRef id="2"/>
+        <AssuranceRef id="4" option="10"/>
+        <DateSigned>01/08/2020</DateSigned>
+        <DateBegin>01/08/2020</DateBegin>
+        <ExpireDate>31/10/2020</ExpireDate>
+    </Contrat>
+    <Contrat>
+        <ClientRef id="2"/>
+        <AssuranceRef id="4" option="17"/>
+        <DateSigned>21/10/2020</DateSigned>
+        <DateBegin>21/10/2020</DateBegin>
+        <ExpireDate>21/10/2020</ExpireDate>
+    </Contrat>
+    <Contrat>
+        <ClientRef id="7"/>
+        <AssuranceRef id="3" option="7"/>
+        <DateSigned>03/02/2020</DateSigned>
+        <DateBegin>03/02/2020</DateBegin>
+        <ExpireDate>02/05/2020</ExpireDate>
     </Contrat>
 </Assurances>
