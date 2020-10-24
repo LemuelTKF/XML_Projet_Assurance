@@ -28,14 +28,17 @@
             <xs:field xpath="@id"/>
         </xs:keyref>
 
-    </xs:element>
-    <xs:element name="Assurance" type="AssuranceType"/>
-    <xs:element name="Client" type="ClientType"/>
-    <xs:element name="Conseiller" type="ConseillerType"/>
-    <xs:element name="Contrat" type="ContratType"/>
-    <xs:element name="Options" type="OptionsType">
+        <xs:key name="TypeReference">
+            <xs:selector xpath="Type"/>
+            <xs:field xpath="@IdType"/>
+        </xs:key>
+        <xs:keyref name="dummyType" refer="TypeReference">
+            <xs:selector xpath="Assurance"/>
+            <xs:field xpath="@Type"/>
+        </xs:keyref>
+
         <xs:key name="OptionId">
-            <xs:selector xpath="Option"/>
+            <xs:selector xpath="Assurance/Options/Option"/>
             <xs:field xpath="@num"/>
         </xs:key>
         <xs:keyref name="dummyOption" refer="OptionId">
@@ -43,8 +46,22 @@
             <xs:field xpath="@option"/>
         </xs:keyref>
     </xs:element>
+    <xs:element name="Assurance" type="AssuranceType"/>
+    <xs:element name="Client" type="ClientType"/>
+    <xs:element name="Conseiller" type="ConseillerType"/>
+    <xs:element name="Contrat" type="ContratType"/>
+    <xs:element name="Options" type="OptionsType"/>
     <xs:element name="Option" type="OptionType"/>
     <xs:element name="Risques" type="RisquesType"/>
+    <xs:element name="Type" type="TypeOfAssurances"/>
+
+    <xs:complexType name="TypeOfAssurances">
+        <xs:sequence>
+            <xs:element name="Intitule" type="xs:string"/>
+            <xs:element name="Description" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="IdType" type="xs:positiveInteger"/>
+    </xs:complexType>
 
     <xs:complexType name="IDType">
         <xs:attribute name="id" type="xs:positiveInteger"/>
@@ -70,6 +87,7 @@
     <xs:complexType name="AssurancesType">
         <xs:sequence>
             <xs:element ref="Assurance" maxOccurs="unbounded"/>
+            <xs:element ref="Type" maxOccurs="unbounded"/>
             <xs:element ref="Client" maxOccurs="unbounded"/>
             <xs:element ref="Conseiller" maxOccurs="unbounded"/>
             <xs:element ref="Contrat" maxOccurs="unbounded"/>
@@ -78,12 +96,12 @@
 
     <xs:complexType name="AssuranceType">
         <xs:sequence>
-            <xs:element name="Type" type="xs:string"/>
-            <xs:element name="Description" type="xs:string" minOccurs="1"/>
             <xs:element name="Genre" type="xs:string" minOccurs="0"/>
             <xs:element ref="Options" minOccurs="1" maxOccurs="1"/>
         </xs:sequence>
+        <xs:attribute name="Type" type="xs:positiveInteger"/>
         <xs:attribute name="IdAss" type="xs:positiveInteger"/>
+
     </xs:complexType>
 
     <xs:complexType name="ClientType">

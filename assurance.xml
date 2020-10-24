@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml-stylesheet type="text/xsl" href="scenario2.xsl"?>
 <Assurances
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="assurance.xsd">
-    <Assurance IdAss="1">
-        <Type>Assurance des personnes</Type>
-        <Description>
-            Les assurances de personnes couvrent les personnes physiques contre les risques de décès ou d’invalidité.
-            On distingue les assurances individuelles et les assurances collectives.
-        </Description>
+    <Assurance IdAss="1" Type="1">
         <Genre> Assurances individuelles</Genre>
         <Options>
             <Option num="1">
@@ -50,20 +45,15 @@
                     L’assuré cotise à une caisse de retraite complémentaire, en plus du régime obligatoire.
                 </Description>
                 <Risques>
-                    <Risque></Risque>
+                    <Risque/>
                 </Risques>
             </Option>
         </Options>
     </Assurance>
-    <Assurance IdAss="2">
-        <Type>Assurance des personnes</Type>
-        <Description>
-            Les assurances de personnes couvrent les personnes physiques contre les risques de décès ou d’invalidité.
-            On distingue les assurances individuelles et les assurances collectives.
-        </Description>
+    <Assurance IdAss="2" Type="1">
         <Genre> Assurances collectives</Genre>
         <Options>
-            <Option num="1">
+            <Option num="4">
                 <Intitule> Assurance prévoyance collective </Intitule>
                 <Prix>25</Prix>
                 <Description>
@@ -71,7 +61,7 @@
                     salariés de l’entreprise.
                 </Description>
                 <Risques>
-                    <Risque >
+                    <Risque>
                     Décès
                     </Risque>
                     <Risque>
@@ -82,7 +72,7 @@
                     </Risque>
                 </Risques>
             </Option>
-            <Option num="2">
+            <Option num="5">
                 <Intitule>  Assurance retraite collective </Intitule>
                 <Prix>30</Prix>
                 <Description>
@@ -102,15 +92,9 @@
 
     </Assurance>
 
-    <Assurance IdAss="3">
-        <Type>Assurances de biens professionnels</Type>
-        <Description>
-        ``Ce type d’assurances protège les équipements (véhicules, meubles, locaux…) de l’entreprise
-            contre les risques de dommages involontaires
-            (accidents, incendies, vandalisme…).
-        </Description>
+    <Assurance IdAss="3" Type="2">
         <Options>
-            <Option num="1">
+            <Option num="6">
                 <Intitule>  l’assurance multirisques </Intitule>
                 <Prix>36</Prix>
                 <Description>
@@ -119,12 +103,10 @@
                     attentat terroriste, grêle, dommages électriques…).
                 </Description>
                 <Risques>
-                    <Risque>
-
-                    </Risque>
+                    <Risque/>
                 </Risques>
             </Option>
-            <Option num="2">
+            <Option num="7">
                 <Intitule>  Assurance automobile </Intitule>
                 <Prix>24</Prix>
                 <Description>
@@ -137,7 +119,7 @@
                     </Risque>
                 </Risques>
             </Option>
-            <Option num="3">
+            <Option num="8">
                 <Intitule>  Assurance motocycle</Intitule>
                 <Prix>50</Prix>
                 <Description>
@@ -145,12 +127,10 @@
                     (vol, accident, explosion...) et les dommages causés à autrui.
                 </Description>
                 <Risques>
-                    <Risque>
-
-                    </Risque>
+                    <Risque/>
                 </Risques>
             </Option>
-            <Option num="4">
+            <Option num="9">
                 <Intitule>Assurance locaux professionnels</Intitule>
                 <Prix>38</Prix>
                 <Description>
@@ -164,7 +144,7 @@
                     </Risque>
                 </Risques>
             </Option>
-            <Option num="5">
+            <Option num="10">
                 <Intitule>Assurance risques informatiques</Intitule>
                 <Prix>15</Prix>
                 <Description>
@@ -172,12 +152,10 @@
                     se prémunir contre ces risques en souscrivant une assurance « risques informatiques ».
                 </Description>
                 <Risques>
-                    <Risque>
-
-                    </Risque>
+                    <Risque/>
                 </Risques>
             </Option>
-            <Option num="6">
+            <Option num="11">
                 <Intitule> Assurance marchandises transportées</Intitule>
                 <Prix>10</Prix>
                 <Description>
@@ -186,13 +164,11 @@
                     de perte ou de dégradation.
                 </Description>
                 <Risques>
-                    <Risque>
-
-                    </Risque>
+                    <Risque/>
                 </Risques>
             </Option>
 
-            <Option num="7">
+            <Option num="12">
                 <Intitule> Assurance bris de machine </Intitule>
                 <Prix>40</Prix>
                 <Description>
@@ -207,13 +183,9 @@
         </Options>
 
     </Assurance>
-    <Assurance IdAss="4">
-        <Type>Assurances d’activité</Type>
-        <Description>
-            Ce type d’assurance couvre les dommages susceptibles d’être causés par l’activité de l’entreprise.
-        </Description>
+    <Assurance IdAss="4" Type="3">
         <Options>
-            <Option num="1">
+            <Option num="13">
                <Intitule>l'assurance responsabilité civile</Intitule>
                 <Prix>40</Prix>
                 <Description>
@@ -221,12 +193,10 @@
                     à autrui, cette assurance est obligatoire.
                 </Description>
                 <Risques>
-                    <Risque>
-
-                    </Risque>
+                    <Risque/>
                 </Risques>
             </Option>
-            <Option num="2">
+            <Option num="14">
                 <Intitule> la garantie décennale</Intitule>
                 <Prix>40</Prix>
                 <Description>
@@ -242,7 +212,7 @@
                     </Risque>
                 </Risques>
             </Option>
-            <Option num="3">
+            <Option num="15">
                 <Intitule> Assurance perte d’exploitation</Intitule>
                 <Prix>40</Prix>
                 <Description>
@@ -255,19 +225,17 @@
                     </Risque>
                 </Risques>
             </Option>
-            <Option num="4">
+            <Option num="16">
                 <Intitule> Assurance protection juridique</Intitule>
                 <Prix>40</Prix>
                 <Description>
                     L’assurance protection juridique protège l’assuré contre toute forme de litige.
                 </Description>
                 <Risques>
-                    <Risque>
-
-                    </Risque>
+                    <Risque/>
                 </Risques>
             </Option>
-            <Option num="5">
+            <Option num="17">
                 <Intitule>Assurance moyens de paiements</Intitule>
                 <Prix>40</Prix>
                 <Description>
@@ -287,6 +255,24 @@
         </Options>
 
     </Assurance>
+
+    <Type IdType="1">
+        <Intitule>Assurance des personnes</Intitule>
+        <Description>Les assurances de personnes couvrent les personnes physiques contre les risques de décès ou d’invalidité.
+            On distingue les assurances individuelles et les assurances collectives.</Description>
+    </Type>
+    <Type IdType="2">
+        <Intitule>Assurances d’activité</Intitule>
+        <Description>Ce type d’assurances protège les équipements (véhicules, meubles, locaux…) de l’entreprise
+            contre les risques de dommages involontaires
+            (accidents, incendies, vandalisme…).</Description>
+    </Type>
+    <Type IdType="3">
+        <Intitule>Assurances de biens professionnels</Intitule>
+        <Description>Ce type d’assurance couvre les dommages susceptibles d’être causés par l’activité de l’entreprise.</Description>
+    </Type>
+
+
 
     <Client IdClient="1">
         <Nom>HONYIGLOH</Nom>
