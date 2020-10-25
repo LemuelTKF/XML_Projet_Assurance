@@ -87,7 +87,7 @@
         <hr class="my-4 dark"/>
         <span><b>Quoi ? :</b> <xsl:value-of select="Intitule"/></span> <br/>
         <span><b>Comment ? :</b> <xsl:value-of select="Description"/></span> <br/>
-        <span><b>Les Risques :</b> <xsl:apply-templates select="Risques"/></span> <br/>
+        <span><b>Les Risques couverts:</b> <xsl:apply-templates select="Risques"/></span> <br/>
     </xsl:template>
 
     <xsl:template match="Risques">
@@ -100,7 +100,7 @@
                 </ul>
             </xsl:when>
             <xsl:otherwise>
-                <span> Pas de Risques (Un peu bête OUI)</span>
+                <span> </span>
             </xsl:otherwise>
         </xsl:choose>
 
