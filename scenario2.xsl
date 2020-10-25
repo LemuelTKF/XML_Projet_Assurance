@@ -45,7 +45,7 @@
                 <div>
                     <div style="margin:5%; text-align:center; ">
                         <h1 class="display-4" style="color:#0dd05a">Statistiques</h1>
-                        <p class="lead">Avec AZUR Assurances, vous avez la possibilité de profiter de plusieurs types d'assurances notamment : </p>
+                        <p class="lead">La liste des Assurances et leurs nombres de souscription </p>
                         <hr class="my-4 dark"/>
                     </div>
 
@@ -63,51 +63,47 @@
             <div>
                 <h4 style="color:#0dd05a;"> <xsl:value-of select="Intitule"/></h4>
                 <hr style="border-color:#0dd05a"/>
-                <p> <xsl:value-of select="Description"/>
-                    <br/><br/>
-
-                    <ol>
+                <p>
                         <xsl:apply-templates select="../Assurance[@Type = $ID]"/>
-                    </ol>
-
                 </p>
             </div>
         </div>
     </xsl:template>
 
     <xsl:template match="Assurance">
-        <xsl:if test="Genre/text()">
-            <b> <li> <xsl:value-of select="Genre"/> </li></b>
-        </xsl:if>
-        <span style="color:#0dd05a;"> <b> Options : </b>   </span>
-        <xsl:apply-templates select="Options/Option"/>
+        <xsl:variable name="ID" select="@IdAss"/>
+            <xsl:choose>
+                <xsl:when test="not(Genre)">
+                    <span> <b>Nombre de souscription total : </b></span>
+                    <xsl:value-of select="count(../Contrat/AssuranceRef[@id = $ID])"/>
+                    <p>
+                        <span> <b> Options : </b> </span>
+                        <ol>
+                        <xsl:apply-templates select="Options/Option"/>
+                        </ol>
+                    </p>
+                </xsl:when>
+                <xsl:otherwise>
+                    <p>
+                    <span> <b><xsl:value-of select="Genre"/> : </b></span>
+                    <xsl:value-of select="count(../Contrat/AssuranceRef[@id = $ID])"/>
+                    </p>
+                    <p>
+                        <span> <b> Options : </b> </span>
+                        <ol>
+                        <xsl:apply-templates select="Options/Option"/>
+                        </ol>
+                    </p>
+                </xsl:otherwise>
+            </xsl:choose>
     </xsl:template>
 
     <xsl:template match="Option">
-        <hr class="my-4 dark"/>
-        <span><b>Quoi ? :</b> <xsl:value-of select="Intitule"/></span> <br/>
-        <span><b>Comment ? :</b> <xsl:value-of select="Description"/></span> <br/>
-        <span><b>Les Risques :</b> <xsl:apply-templates select="Risques"/></span> <br/>
+        <xsl:variable name="ID" select="@num"/>
+        <li>
+        <span><xsl:value-of select="Intitule"/> : <xsl:value-of select="count(../../../Contrat/AssuranceRef[@option = $ID])"/></span>
+        </li>
     </xsl:template>
-
-    <xsl:template match="Risques">
-        <xsl:choose>
-            <xsl:when test="Risque/text()">
-                <ul>
-                    <xsl:for-each select="Risque">
-                        <li> <xsl:value-of select="."/></li>
-                    </xsl:for-each>
-                </ul>
-            </xsl:when>
-            <xsl:otherwise>
-                <span> Pas de Risques (Un peu bête OUI)</span>
-            </xsl:otherwise>
-        </xsl:choose>
-
-    </xsl:template>
-
-
-
 
 
 </xsl:stylesheet>
