@@ -1,0 +1,437 @@
+
+
+{
+  "@noNamespaceSchemaLocation": "assurance.xsd",
+  "Assurance": [
+    {
+      "@IdAss": "1",
+      "@Type": "1",
+      "Genre": "Assurances individuelles",
+      "Options": [
+        {
+          "@num": "1",
+          "Intitule": "Assurance Décès Invalidité",
+          "Prix": "60",
+          "Description": "L’assurance décès invalidité (ADI) assure aux bénéficiaires du contrat (assuré, conjoint, enfants)\n                    le versement d’un capital (en cas de décès) ou d’indemnités (en cas d’invalidité de l’entrepreneur).",
+          "Risques": [
+            "Décès de l'emprunteur",
+            "Perte totale et irréversible d?autonomie",
+            "Incapacité temporaire de travail"
+          ]
+        },
+        {
+          "@num": "2",
+          "Intitule": "Assurance complémentaire santé",
+          "Prix": "50",
+          "Description": "Les complémentaires santé, appelées également mutuelles, prennent en charge la part\n                    des frais médicaux non remboursée par le régime général.",
+          "Risques": [
+            "Accident",
+            "Maternité",
+            "Frais de santé"
+          ]
+        },
+        {
+          "@num": "3",
+          "Intitule": "Assurance retraite",
+          "Prix": "40",
+          "Description": "L’assuré cotise à une caisse de retraite complémentaire, en plus du régime obligatoire.",
+          "Risques": {
+            "Risque": []
+          }
+        }
+      ]
+    },
+    {
+      "@IdAss": "2",
+      "@Type": "1",
+      "Genre": "Assurances collectives",
+      "Options": [
+        {
+          "@num": "4",
+          "Intitule": "Assurance prévoyance collective",
+          "Prix": "25",
+          "Description": "Même principe que pour l’assurance « santé individuelle », à la différence près que le contrat est ici élargi aux\n                    salariés de l’entreprise.",
+          "Risques": [
+            "Décès",
+            "Invalidité",
+            "incapacité de travail"
+          ]
+        },
+        {
+          "@num": "5",
+          "Intitule": "Assurance retraite collective",
+          "Prix": "30",
+          "Description": "Les entreprises peuvent instaurer pour leurs salariés, en complément du régime obligatoire, un système de\n                    retraite complémentaire (AGIRC pour les cadres, ARRCO pour les employés).",
+          "Risques": [
+            "Dommages corporels",
+            "Engagements liés à la durée de la vie"
+          ]
+        }
+      ]
+    },
+    {
+      "@IdAss": "3",
+      "@Type": "2",
+      "Options": [
+        {
+          "@num": "6",
+          "Intitule": "l’assurance multirisques",
+          "Prix": "36",
+          "Description": "Ce type d’assurance protège les marchandises et les biens d’équipement et immobiliers contre toute\n                    les formes de sinistres (catastrophe naturelle, incendies, cambriolage, dégât des eaux, tempête,\n                    attentat terroriste, grêle, dommages électriques…).",
+          "Risques": {
+            "Risque": []
+          }
+        },
+        {
+          "@num": "7",
+          "Intitule": "Assurance automobile",
+          "Prix": "24",
+          "Description": "L’assurance automobile couvre la voiture de l’entreprise contre les risques de vandalisme, de vol,\n                    d’accident, d’explosion ou de bris de glace. Sont également pris en charge les accidents susceptibles d’être provoqués par votre véhicule.",
+          "Risques": {
+            "Risque": "Accident"
+          }
+        },
+        {
+          "@num": "8",
+          "Intitule": "Assurance motocycle",
+          "Prix": "50",
+          "Description": "Comme pour l'assurance « automobile », l'assuré peut couvrir un deux roues contre les risques de sinistres\n                    (vol, accident, explosion...) et les dommages causés à autrui.",
+          "Risques": {
+            "Risque": []
+          }
+        },
+        {
+          "@num": "9",
+          "Intitule": "Assurance locaux professionnels",
+          "Prix": "38",
+          "Description": "Face aux dommages que peuvent entraîner un incendie, un dégât des eaux, une explosion ou une catastrophe naturelle, les chefs d'entreprise peuvent protéger leurs biens immobiliers contre ces risques\n                    en souscrivant une assurance « locaux professionnels ».",
+          "Risques": {
+            "Risque": "Accident"
+          }
+        },
+        {
+          "@num": "10",
+          "Intitule": "Assurance risques informatiques",
+          "Prix": "15",
+          "Description": "En raison des dégâts matériels qui peuvent endommager les supports d’information et les fichiers informatiques, les entreprises peuvent\n                    se prémunir contre ces risques en souscrivant une assurance « risques informatiques ».",
+          "Risques": {
+            "Risque": []
+          }
+        },
+        {
+          "@num": "11",
+          "Intitule": "Assurance marchandises transportées",
+          "Prix": "10",
+          "Description": "L’assurance marchandises transportées s’ajoute en complément de l’assurance automobile (ou flotte automobile).\n                    Elle permet de protéger les marchandises transportées par véhicule contre les risques de vandalisme,\n                    de perte ou de dégradation.",
+          "Risques": {
+            "Risque": []
+          }
+        },
+        {
+          "@num": "12",
+          "Intitule": "Assurance bris de machine",
+          "Prix": "40",
+          "Description": "L’assurance bris de machine couvre le matériel et les équipements de l’entreprise contre les risques de dégradation.",
+          "Risques": {
+            "Risque": "Dégradation des machines et équipements"
+          }
+        }
+      ]
+    },
+    {
+      "@IdAss": "4",
+      "@Type": "3",
+      "Options": [
+        {
+          "@num": "13",
+          "Intitule": "l'assurance responsabilité civile",
+          "Prix": "40",
+          "Description": "L’assurance responsabilité civile couvre les préjudices causés à des tiers (salariés, clients) et découlant de l’activité professionnelle (un salarié ou une machine blessant une personne interne par exemple). L’entrepreneur étant responsable des dommages occasionnés\n                    à autrui, cette assurance est obligatoire.",
+          "Risques": {
+            "Risque": []
+          }
+        },
+        {
+          "@num": "14",
+          "Intitule": "la garantie décennale",
+          "Prix": "40",
+          "Description": "Cette assurance protège le maître d’ouvrage contre les risques de vices qui peuvent affecter le sol et le bâtiment.\n                    Les risques de non-conformité à certaines normes obligatoires sont également garantis.",
+          "Risques": [
+            "Vices affectant le sol et le bâtiment",
+            "Non-conformité à certaines normes obligatoires"
+          ]
+        },
+        {
+          "@num": "15",
+          "Intitule": "Assurance perte d’exploitation",
+          "Prix": "40",
+          "Description": "Vu qu’aucune société n’est à l’abri d’une baisse d’activité professionnelle due à un « événement extérieur », les chefs d’entreprise peuvent se prémunir de ce type de risque en souscrivant\n                    à une assurance « activité professionnelle »",
+          "Risques": {
+            "Risque": "Sinistres(catastrophes naturelles)"
+          }
+        },
+        {
+          "@num": "16",
+          "Intitule": "Assurance protection juridique",
+          "Prix": "40",
+          "Description": "L’assurance protection juridique protège l’assuré contre toute forme de litige.",
+          "Risques": {
+            "Risque": []
+          }
+        },
+        {
+          "@num": "17",
+          "Intitule": "Assurance moyens de paiements",
+          "Prix": "40",
+          "Description": "En réponse aux incidents de paiements qui peuvent affecter les entreprises (vol ou l’utilisation frauduleuse de chèques ou de cartes de crédits par exemple), leurs dirigeants peuvent se prémunir contre ce type de\n                    risque en souscrivant à cette assurance.",
+          "Risques": [
+            "Vol de carte",
+            "Utilisation frauduleuse de chèques ou de cartes de crédits"
+          ]
+        }
+      ]
+    }
+  ],
+  "Type": [
+    {
+      "@IdType": "1",
+      "Intitule": "Assurance des personnes",
+      "Description": "Les assurances de personnes couvrent les personnes physiques contre les risques de décès ou d’invalidité.\n            On distingue les assurances individuelles et les assurances collectives."
+    },
+    {
+      "@IdType": "2",
+      "Intitule": "Assurances d’activité",
+      "Description": "Ce type d’assurances protège les équipements (véhicules, meubles, locaux…) de l’entreprise\n            contre les risques de dommages involontaires\n            (accidents, incendies, vandalisme…)."
+    },
+    {
+      "@IdType": "3",
+      "Intitule": "Assurances de biens professionnels",
+      "Description": "Ce type d’assurance couvre les dommages susceptibles d’être causés par l’activité de l’entreprise."
+    }
+  ],
+  "Client": [
+    {
+      "@IdClient": "1",
+      "Nom": "HONYIGLOH",
+      "Prenom": "Jean Armand",
+      "DateNaiss": "22/10/2000",
+      "Adresse": "2400 route des dolines",
+      "Email": "honyiglohjeanarmand@gmail.com",
+      "ConseillerRef": {
+        "@id": "1"
+      },
+      "Statut": "Particulier"
+    },
+    {
+      "@IdClient": "2",
+      "Nom": "DONTO",
+      "Prenom": "Komlan Lemuel",
+      "DateNaiss": "15/08/2000",
+      "Adresse": "2400 route des dolines",
+      "Email": "lemueldontogates5@gmail.com",
+      "ConseillerRef": {
+        "@id": "1"
+      },
+      "Statut": "Entreprise"
+    },
+    {
+      "@IdClient": "3",
+      "Nom": "ASSIGBLEY",
+      "Prenom": "Jonathan",
+      "DateNaiss": "04/10/2000",
+      "Adresse": "400 route des galles Montreal",
+      "Email": "assigleyjonathan@gmail.com",
+      "ConseillerRef": {
+        "@id": "1"
+      },
+      "Statut": "Particulier"
+    },
+    {
+      "@IdClient": "4",
+      "Nom": "POLYTECH",
+      "Prenom": "NICE SOPHIA",
+      "DateNaiss": "22/10/2000",
+      "Adresse": "930 Route des Colles, 06410 Biot",
+      "Email": "polytechnicesophia@gmail.com",
+      "ConseillerRef": {
+        "@id": "1"
+      },
+      "Statut": "Entreprise"
+    },
+    {
+      "@IdClient": "5",
+      "Nom": "ADANLEHOUSSI",
+      "Prenom": "Denis",
+      "DateNaiss": "09/10/1999",
+      "Adresse": "2400 route des dolines",
+      "Email": "denisadanlehoussi@gmail.com",
+      "ConseillerRef": {
+        "@id": "1"
+      },
+      "Statut": "Entreprise"
+    },
+    {
+      "@IdClient": "6",
+      "Nom": "NAYO",
+      "Prenom": "Ghislain",
+      "DateNaiss": "19/10/2000",
+      "Adresse": "120 carrefour des lions, DAKAR, Sénégal",
+      "Email": "nayoghislain@gmail.com",
+      "ConseillerRef": {
+        "@id": "1"
+      },
+      "Statut": "Particulier"
+    },
+    {
+      "@IdClient": "7",
+      "Nom": "ADUAYOM",
+      "Prenom": "Caleb",
+      "DateNaiss": "22/05/2000",
+      "Adresse": "Agbalepedo, Togo, Lomé",
+      "Email": "aduayomcaleb@gmail.com",
+      "ConseillerRef": {
+        "@id": "2"
+      },
+      "Statut": "Particulier"
+    }
+  ],
+  "Conseiller": [
+    {
+      "@IdCons": "1",
+      "Nom": "DEBRUYNE",
+      "Prenom": "Marc",
+      "DateNaiss": "18/04/1984",
+      "Email": "debruynemarc@gmail.com"
+    },
+    {
+      "@IdCons": "2",
+      "Nom": "LAMERE",
+      "Prenom": "Stephanie",
+      "DateNaiss": "02/05/1987",
+      "Email": "debruynemarc@gmail.com"
+    }
+  ],
+  "Contrat": [
+    {
+      "ClientRef": {
+        "@id": "1"
+      },
+      "AssuranceRef": {
+        "@id": "2",
+        "@option": "4"
+      },
+      "DateSigned": "24/10/2020",
+      "DateBegin": "01/11/2020",
+      "ExpireDate": "01/11/2022"
+    },
+    {
+      "ClientRef": {
+        "@id": "5"
+      },
+      "AssuranceRef": {
+        "@id": "1",
+        "@option": "2"
+      },
+      "DateSigned": "19/06/2019",
+      "DateBegin": "19/06/2019",
+      "ExpireDate": "19/06/2020"
+    },
+    {
+      "ClientRef": {
+        "@id": "5"
+      },
+      "AssuranceRef": {
+        "@id": "3",
+        "@option": "8"
+      },
+      "DateSigned": "24/10/2020",
+      "DateBegin": "24/10/2020",
+      "ExpireDate": "24/10/2023"
+    },
+    {
+      "ClientRef": {
+        "@id": "6"
+      },
+      "AssuranceRef": {
+        "@id": "3",
+        "@option": "8"
+      },
+      "DateSigned": "08/05/2018",
+      "DateBegin": "15/05/2020",
+      "ExpireDate": "14/05/2021"
+    },
+    {
+      "ClientRef": {
+        "@id": "6"
+      },
+      "AssuranceRef": {
+        "@id": "1",
+        "@option": "3"
+      },
+      "DateSigned": "08/05/2018",
+      "DateBegin": "15/05/2020",
+      "ExpireDate": "14/05/2021"
+    },
+    {
+      "ClientRef": {
+        "@id": "6"
+      },
+      "AssuranceRef": {
+        "@id": "1",
+        "@option": "2"
+      },
+      "DateSigned": "21/10/2020",
+      "DateBegin": "21/10/2020",
+      "ExpireDate": "21/10/2020"
+    },
+    {
+      "ClientRef": {
+        "@id": "2"
+      },
+      "AssuranceRef": {
+        "@id": "4",
+        "@option": "16"
+      },
+      "DateSigned": "01/08/2020",
+      "DateBegin": "01/08/2020",
+      "ExpireDate": "31/10/2020"
+    },
+    {
+      "ClientRef": {
+        "@id": "2"
+      },
+      "AssuranceRef": {
+        "@id": "3",
+        "@option": "10"
+      },
+      "DateSigned": "01/08/2020",
+      "DateBegin": "01/08/2020",
+      "ExpireDate": "31/10/2020"
+    },
+    {
+      "ClientRef": {
+        "@id": "2"
+      },
+      "AssuranceRef": {
+        "@id": "4",
+        "@option": "17"
+      },
+      "DateSigned": "21/10/2020",
+      "DateBegin": "21/10/2020",
+      "ExpireDate": "21/10/2020"
+    },
+    {
+      "ClientRef": {
+        "@id": "7"
+      },
+      "AssuranceRef": {
+        "@id": "3",
+        "@option": "7"
+      },
+      "DateSigned": "03/02/2020",
+      "DateBegin": "03/02/2020",
+      "ExpireDate": "02/05/2020"
+    }
+  ]
+}
+
