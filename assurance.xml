@@ -407,7 +407,7 @@
     </Contrat>
     <Contrat>
         <ClientRef id="2"/>
-        <AssuranceRef id="4" option="10"/>
+        <AssuranceRef id="3" option="10"/>
         <DateSigned>01/08/2020</DateSigned>
         <DateBegin>01/08/2020</DateBegin>
         <ExpireDate>31/10/2020</ExpireDate>
