@@ -45,7 +45,8 @@
                     L’assuré cotise à une caisse de retraite complémentaire, en plus du régime obligatoire.
                 </Description>
                 <Risques>
-                    <Risque/>
+                    <Risque>Fin d'activité </Risque>
+                    <Risque>Vieillesse </Risque>
                 </Risques>
             </Option>
         </Options>
@@ -103,7 +104,10 @@
                     attentat terroriste, grêle, dommages électriques…).
                 </Description>
                 <Risques>
-                    <Risque/>
+                    <Risque>
+                        pertes liées aux vols, à des dégradations, à un incendie, un dégât des eaux, une
+                        catastrophe naturelle ou encore un aléa climatique (orage, inondation, grêle, tempête, etc.).
+                    </Risque>
                 </Risques>
             </Option>
             <Option num="7">
@@ -127,7 +131,7 @@
                     (vol, accident, explosion...) et les dommages causés à autrui.
                 </Description>
                 <Risques>
-                    <Risque/>
+                    <Risque>Accident</Risque>
                 </Risques>
             </Option>
             <Option num="9">
@@ -140,7 +144,7 @@
 
                 <Risques>
                     <Risque>
-                        Accident
+                        Dommages causés au logement par un incendie, une explosion ou un dégât des eaux.
                     </Risque>
                 </Risques>
             </Option>
@@ -152,7 +156,8 @@
                     se prémunir contre ces risques en souscrivant une assurance « risques informatiques ».
                 </Description>
                 <Risques>
-                    <Risque/>
+                    <Risque>Couverture du matériel informatique (y compris les systèmes de télécommunication et les périphériques) en cas de sinistre lié à un incendie,
+                        la grêle, la foudre, une tempête, un dégât des eaux, un vol, etc. </Risque>
                 </Risques>
             </Option>
             <Option num="11">
@@ -164,7 +169,8 @@
                     de perte ou de dégradation.
                 </Description>
                 <Risques>
-                    <Risque/>
+                   <Risque> Perte de marchandise </Risque>
+                    <Risque> Avarie de marchandises </Risque>
                 </Risques>
             </Option>
 
@@ -193,7 +199,11 @@
                     à autrui, cette assurance est obligatoire.
                 </Description>
                 <Risques>
-                    <Risque/>
+                    <Risque>des dommages causés par votre propre faute, par imprudence ou par négligence</Risque>
+                    <Risque>actes commis par vos enfants mineurs</Risque>
+                    <Risque>actes commis par vos employés de maison</Risque>
+                    <Risque>des dommages dus aux objets que vous détenez, qui vous appartiennent, que vous avez empruntés ou loués</Risque>
+
                 </Risques>
             </Option>
             <Option num="14">
@@ -232,7 +242,10 @@
                     L’assurance protection juridique protège l’assuré contre toute forme de litige.
                 </Description>
                 <Risques>
-                    <Risque/>
+                    <Risque>
+                        Ce type de contrat englobe les risques qui relèvent du droit contractuel, du droit de la consommation, du droit administratif,
+                        du droit pénal, du droit immobilier, du droit numérique…
+                    </Risque>
                 </Risques>
             </Option>
             <Option num="17">
